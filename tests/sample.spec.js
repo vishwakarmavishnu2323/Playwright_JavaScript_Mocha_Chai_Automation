@@ -10,12 +10,13 @@ test.skip('test2',async({page})=>{
     
          expect(20).toBe(20)
 })
+/*
 test.only('test3',async({page})=>{
  
         expect("vishnu vishwakarma").toContain("vishnu")
         expect(true).toBeTruthy()
         expect("vishnu vishwakrma".includes("vishnu")).toBeTruthy()
-})
+})*/
 
 test('test4',async({page})=>{
     
