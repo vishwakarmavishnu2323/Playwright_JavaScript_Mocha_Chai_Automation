@@ -1,0 +1,31 @@
+{
+  "profile": {
+    "username": "admin1@email.com",
+    "password": "admin@123",
+    "name": "Mukesh",
+    "interest": ["Cypress", "Java", "API"],
+    "gender": "Male",
+    "address": {
+      "area": "HSR",
+      "city": "Bangalore",
+      "pincode": 556699
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin1@email.com",
+      "password": "admin@123"
+    },
+    {
+      "id": 2,
+      "username": "admin2@email.com",
+      "password": "admin@456"
+    },
+    {
+      "id": 3,
+      "username": "admin3@email.com",
+      "password": "admin@678"
+    }
+  ]
+}
