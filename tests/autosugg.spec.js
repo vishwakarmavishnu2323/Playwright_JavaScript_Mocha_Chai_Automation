@@ -24,7 +24,7 @@ test('Verify Application Title', async ({ page }) => {
 
 
 
-test.only('Verify Application Title Using Loop', async ({ page }) => {
+test('Verify Application Title Using Loop', async ({ page }) => {
   // Open Google
   await page.goto('https://www.google.com');
 
