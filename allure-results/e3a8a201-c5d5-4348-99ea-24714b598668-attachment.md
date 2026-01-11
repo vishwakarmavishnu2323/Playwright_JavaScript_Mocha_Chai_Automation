@@ -1,0 +1,151 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6] [cursor=pointer]:
+        - img "logo" [ref=e7]
+        - heading "Learn Automation Courses" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - img "menu" [ref=e10] [cursor=pointer]
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - text: Learn Automation Courses
+            - img "delete" [ref=e13] [cursor=pointer]
+          - generic [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: Home
+            - link "Practise" [ref=e17] [cursor=pointer]:
+              - /url: /practise
+              - generic [ref=e18]: Practise
+            - button "Log in" [ref=e19] [cursor=pointer]
+  - generic [ref=e21]:
+    - generic [ref=e24]:
+      - heading "Sign Up" [level=2] [ref=e25]
+      - textbox "Name" [ref=e26]
+      - textbox "Email" [ref=e27]
+      - textbox "Password must be atleast 6 characters" [ref=e28]:
+        - /placeholder: Password
+      - heading "Interests" [level=4] [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - checkbox "TestNG" [ref=e33]
+          - generic [ref=e34]: TestNG
+        - generic [ref=e35]:
+          - checkbox "Selenium" [ref=e37]
+          - generic [ref=e38]: Selenium
+        - generic [ref=e39]:
+          - checkbox "Playwright" [ref=e41]
+          - generic [ref=e42]: Playwright
+        - generic [ref=e43]:
+          - checkbox "Java" [ref=e45]
+          - generic [ref=e46]: Java
+        - generic [ref=e47]:
+          - checkbox "RestAssured" [ref=e49]
+          - generic [ref=e50]: RestAssured
+        - generic [ref=e51]:
+          - checkbox "Selenium1" [ref=e53]
+          - generic [ref=e54]: Selenium1
+        - generic [ref=e55]:
+          - checkbox "Selenium3" [ref=e57]
+          - generic [ref=e58]: Selenium3
+        - generic [ref=e59]:
+          - checkbox "QA Engineer" [ref=e61]
+          - generic [ref=e62]: QA Engineer
+        - generic [ref=e63]:
+          - checkbox "Playwright6043" [ref=e65]
+          - generic [ref=e66]: Playwright6043
+        - generic [ref=e67]:
+          - checkbox "Playwright3746" [ref=e69]
+          - generic [ref=e70]: Playwright3746
+        - generic [ref=e71]:
+          - checkbox "Playwright1244" [ref=e73]
+          - generic [ref=e74]: Playwright1244
+        - generic [ref=e75]:
+          - checkbox "Playwright6108" [ref=e77]
+          - generic [ref=e78]: Playwright6108
+        - generic [ref=e79]:
+          - checkbox "Playwright30263026" [ref=e81]
+          - generic [ref=e82]: Playwright30263026
+        - generic [ref=e83]:
+          - checkbox "Playwright87088708" [ref=e85]
+          - generic [ref=e86]: Playwright87088708
+      - heading "Gender" [level=4] [ref=e87]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - radio [checked] [ref=e90]
+          - generic [ref=e91]: Male
+        - generic [ref=e92]:
+          - radio [ref=e93]
+          - generic [ref=e94]: Female
+      - generic [ref=e95]:
+        - heading "State:" [level=4] [ref=e96]
+        - combobox [ref=e97]:
+          - option "Andhra Pradesh"
+          - option "Arunachal Pradesh"
+          - option "Assam"
+          - option "Bihar" [selected]
+          - option "Chhattisgarh"
+          - option "Goa"
+          - option "Gujarat"
+          - option "Haryana"
+          - option "Himachal Pradesh"
+          - option "Jammu and Kashmir"
+          - option "Jharkhand"
+          - option "Karnataka"
+          - option "Kerala"
+          - option "Madhya Pradesh"
+          - option "Maharashtra"
+          - option "Manipur"
+          - option "Meghalaya"
+          - option "Mizoram"
+          - option "Nagaland"
+          - option "Odisha"
+          - option "Punjab"
+          - option "Rajasthan"
+          - option "Sikkim"
+          - option "Tamil Nadu"
+          - option "Telangana"
+          - option "Tripura"
+          - option "Uttarakhand"
+          - option "Uttar Pradesh"
+          - option "West Bengal"
+          - option "Andaman and Nicobar Islands"
+          - option "Chandigarh"
+          - option "Dadra and Nagar Haveli"
+          - option "Daman and Diu"
+          - option "Delhi"
+          - option "Lakshadweep"
+          - option "Puducherry"
+      - generic [ref=e98]:
+        - heading "Hobbies:" [level=4] [ref=e99]
+        - listbox [ref=e100]:
+          - option "Playing" [ref=e101]
+          - option "Reading" [ref=e102]
+          - option "Swimming" [ref=e103]
+          - option "Singing" [ref=e104]
+          - option "Dancing" [ref=e105]
+      - button "Sign up" [disabled] [ref=e106]
+      - link "Already a user? Login" [ref=e107] [cursor=pointer]:
+        - /url: /login
+    - img "Login" [ref=e109]
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - heading "Learn Automation By Mukesh Otwani" [level=3] [ref=e113]
+      - heading "©2023 All rights reserved" [level=2] [ref=e114]
+    - generic [ref=e115] [cursor=pointer]:
+      - link [ref=e116]:
+        - /url: https://youtube.com/MukeshOtwani
+        - img [ref=e117]
+      - link [ref=e120]:
+        - /url: https://twitter.com/MukeshOtwani
+        - img [ref=e121]
+      - link [ref=e123]:
+        - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+        - img [ref=e124]
+      - link [ref=e126]:
+        - /url: https://www.facebook.com/groups/256655817858291
+        - img [ref=e127]
+```
