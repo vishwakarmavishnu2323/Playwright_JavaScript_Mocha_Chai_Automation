@@ -20,7 +20,7 @@ test.only('test3',async({page})=>{
 
 test('test4',async({page})=>{
     
-      await page.goto('https://www.amazon.com/') 
+      await page.goto('https://www.google.com/') 
 
       const url=page.url()
       console.log(url)
@@ -28,7 +28,7 @@ test('test4',async({page})=>{
       const title=page.title()
       console.log("url is:"+title)
 
-      await expect(page).toHaveURL('https://www.amazon.com/')
-      await expect(page).toHaveTitle("amazon")
+      await expect(page).toHaveURL('https://www.google.com/')
+      await expect(page).toHaveTitle("Google")
 
 })

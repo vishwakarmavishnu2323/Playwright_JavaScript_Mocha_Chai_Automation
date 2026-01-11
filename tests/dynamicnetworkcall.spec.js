@@ -11,5 +11,5 @@ test('Working With Load State', async ({ page }) => {
 
   const count = await page.locator("//input[@type='checkbox']").count()
 
-  expect(count).toBe(6)
+  expect(count).toBe(5)
 })

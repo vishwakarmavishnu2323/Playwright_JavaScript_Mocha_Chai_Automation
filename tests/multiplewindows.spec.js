@@ -14,12 +14,12 @@ test('Working with multiple tabs', async ({ browser }) => {
       page.locator("(//a[contains(@href,'facebook')])[1]").click()
     ]
   )
-  await newPage.waitForSelector(5000)
+  //await newPage.waitForSelector(5000)
 
   await newPage.locator("(//input[@name='email'])[2]").fill("mukesh@gmail.com")
-  await newPage.waitForSelector(5000)
+  //await newPage.waitForSelector(5000)
    await page.locator("#email1").fill("admin@email.com")
-   await page.waitForSelector(5000)
+   //await page.waitForSelector(5000)
 
 
 

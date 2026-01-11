@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5849","Handle prompt box","chromium","2026-01-11","passed","2026-01-11","","alert.spec.js","",""
+"","32537","Verify Application Title","chromium","2026-01-11","broken","2026-01-11","","autosugg.spec.js","",""
+"","5710","Handle confirm box","chromium","2026-01-11","passed","2026-01-11","","alert.spec.js","",""
+"","5813","Handle Alert","chromium","2026-01-11","passed","2026-01-11","","alert.spec.js","",""
+"","5184","Verify Application Title Using Loop","chromium","2026-01-11","passed","2026-01-11","","autosugg.spec.js","",""

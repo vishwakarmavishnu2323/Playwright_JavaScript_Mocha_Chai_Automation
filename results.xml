@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 6
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -49,8 +51,10 @@
       {
         "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "metadata": {},
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
         "id": "chromium",
         "name": "chromium",
         "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
@@ -63,8 +67,10 @@
       {
         "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "metadata": {},
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
         "id": "firefox",
         "name": "firefox",
         "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
@@ -77,8 +83,10 @@
       {
         "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "metadata": {},
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
         "id": "webkit",
         "name": "webkit",
         "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
@@ -97,19 +105,496 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "alert.spec.js",
+      "file": "alert.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Handle Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6735,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.500Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-9ed975017f5e2ba45e30",
+          "file": "alert.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Handle confirm box",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.419Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-4c01e823ba8d4d2a0c8a",
+          "file": "alert.spec.js",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "Handle prompt box",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 6677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.324Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-b34ef3d18faf74c7c394",
+          "file": "alert.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "Handle Alert",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "timedOut",
+                  "duration": 30501,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\tests\\alert.spec.js",
+                        "column": 63,
+                        "line": 16
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Click for JS Alert\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button onclick=\"jsAlert()\">Click for JS Alert</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\n\n\u001b[0m \u001b[90m 14 |\u001b[39m   })\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[text()='Click for JS Alert']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m })\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m test(\u001b[32m\"Handle confirm box\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\tests\\alert.spec.js:16:63\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.288Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-537b22015922722b4fd3",
+          "file": "alert.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Handle confirm box",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "timedOut",
+                  "duration": 30068,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                    },
+                    {
+                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.437Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-6397a9a08981d59c7e6e",
+          "file": "alert.spec.js",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "Handle prompt box",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "timedOut",
+                  "duration": 30249,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                    },
+                    {
+                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:38.514Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-5875f45ed57968c3483c",
+          "file": "alert.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "Handle Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 6221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:49.652Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-0191293088aacca06ca6",
+          "file": "alert.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Handle confirm box",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:49.643Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-02ae7e18c4393946aa40",
+          "file": "alert.spec.js",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "Handle prompt box",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T15:07:49.641Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "58a97d902aa7686a9021-fc145d9a78f4a91ac20e",
+          "file": "alert.spec.js",
+          "line": 36,
+          "column": 1
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-01-07T11:55:01.896Z",
-    "duration": 17.492999999999938,
-    "expected": 0,
+    "startTime": "2026-01-11T15:07:36.551Z",
+    "duration": 39401.841,
+    "expected": 6,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 3,
     "flaky": 0
   }
 }

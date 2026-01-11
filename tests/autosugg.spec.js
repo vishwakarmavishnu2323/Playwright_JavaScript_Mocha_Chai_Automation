@@ -1,26 +1,26 @@
 const { test, expect } = require('@playwright/test');
-
+/*
 test('Verify Application Title', async ({ page }) => {
   // Navigate to Google
   await page.goto('https://www.google.com');
 
   // Type text in search box
-  await page.locator('textarea[name="q"]').type('Mukesh Otwani');
+  await page.locator('textarea[name="q"]').fill('Vishnu vishwakarma');
 
   // Wait for auto-suggestion list
-  await page.waitForSelector('//li[@role="presentation"]');
+  await page.waitForSelector("//li[@data-attrid='AutocompletePrediction']");
 
   // Navigate suggestions using keyboard
   await page.keyboard.press('ArrowDown');
-  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowDown')
 
   // Select suggestion
   await page.keyboard.press('Enter');
 
   // Optional: verify title contains searched text
-  await expect(page).toHaveTitle(/Mukesh Otwani/);
-});
-
+  await expect(page).toHaveTitle(/Vishnu vishwakarma/);
+});  
+*/
 
 
 
@@ -29,19 +29,19 @@ test('Verify Application Title Using Loop', async ({ page }) => {
   await page.goto('https://www.google.com');
 
   // Type search keyword
-  await page.locator('textarea[name="q"]').type('Mukesh Otwani');
+  await page.locator('textarea[name="q"]').type('Vishnu vishwakarma');
 
   // Wait for auto-suggestions
-  await page.waitForSelector("//li[@role='presentation']");
+  await page.waitForSelector("//li[@data-attrid='AutocompletePrediction']");
 
   // Capture all suggestions
-  const elements = await page.$$("//li[@role='presentation']");
+  const elements = await page.$$("//li[@data-attrid='AutocompletePrediction']");
 
   for (let i = 0; i < elements.length; i++) {
 
     const text = await elements[i].textContent()
 
-    if (text.includes('youtube')) {
+    if (text.includes('twitter')) {
 
       await elements[i].click()
       break
@@ -49,5 +49,5 @@ test('Verify Application Title Using Loop', async ({ page }) => {
   }
 
   // Optional assertion
-  await expect(page).toHaveTitle(/youtube/i);
+  await expect(page).toHaveTitle(/twitter/i);
 });

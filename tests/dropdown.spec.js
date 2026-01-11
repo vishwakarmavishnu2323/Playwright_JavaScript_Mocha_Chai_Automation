@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Select Values From Dropdown', async ({ page }) => {
-
+test('Select values from dropdown', async ({ page }) => {
   await page.goto('https://freelance-learn-automation.vercel.app/signup');
 
   // Select by label
@@ -14,44 +13,41 @@ test('Select Values From Dropdown', async ({ page }) => {
 
   // Select by index
   await page.locator('#state').selectOption({ index: 4 });
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 
-  const value = await page.locator('#state').textContent();
-  console.log('All dropdown values:', value);
+  // Print all dropdown values
+  const values = await page.locator('#state option').allTextContents();
+  console.log('All dropdown values:', values);
+});
 
+test('Verify value exists in dropdown', async ({ page }) => {
+  await page.goto('https://freelance-learn-automation.vercel.app/signup');
 
+  const state = await page.$('#state');
+  const allElements = await page.$$('option');
 
+  let ddStatus = false;
 
-  // Get the dropdown
-const state = page.$('#state');
+  for (const element of allElements) {
+    const value = await element.textContent();
+    console.log('Dropdown value:', value);
 
-let ddStatus = false;
-
-// Get all option elements
-//const allElements = await state.locator('option').all();
-const allElements = await state.$$('option')
-
-// Loop through options
-for (let i = 0; i < allElements.length; i++) {
-  const value = await allElements[i].textContent();
-  console.log('Value from dropdown using for loop:', value);
-
-   if (value.includes('Rajasthan')) {
-    ddStatus = true;
-    break;
+    if (value.includes('Assam')) {
+      ddStatus = true;
+      console.log('Dropdown ddStatusvalue:', ddStatus);
+      break;
+    }
   }
-}
-await expect(ddStatus).toBeTruthy();
+
+  await expect(ddStatus).toBeTruthy();
 
 
 
-await page.locator('#hobbies').selectOption([
-  { label: 'Playing' },
-  { label: 'Swimming' },
-]);
+  // Multi-select dropdown
+  await page.locator('#hobbies').selectOption([
+    { label: 'Playing' },
+    { label: 'Swimming' },
+  ]);
 
-await page.waitForTimeout(3000);
-
-
-
+  await page.waitForTimeout(3000);
 });

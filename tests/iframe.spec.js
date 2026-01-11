@@ -8,5 +8,5 @@ test("Handle Frames", async ({ page }) => {
 
   await iframe.locator("//a[text()='java.applet']").click()
 
-  await page.pause()
+  //await page.pause()
 })
