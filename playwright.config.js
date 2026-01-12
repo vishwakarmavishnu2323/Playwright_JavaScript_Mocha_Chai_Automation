@@ -57,6 +57,8 @@ reporter: [['list'],
      screenshot: "on", //Screenshot for failed & passed tests
      video: "on",  //video for failed & passed tests
      //viewport: null  //maximize browser window
+     viewport:{width:1920,height:1080},
+     headless: false,
   },
 
   //timeout=3000,
@@ -66,7 +68,8 @@ reporter: [['list'],
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-      viewport:{width:1920,height:1080}
+      //viewport:{width:1920,height:1080},
+      // headless: true,
        },  
     },
 

@@ -63,38 +63,6 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 6
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 6
-        },
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
       }
     ],
     "shard": null,
@@ -107,13 +75,13 @@
   },
   "suites": [
     {
-      "title": "alert.spec.js",
-      "file": "alert.spec.js",
+      "title": "MultipleDropdown.spec.js",
+      "file": "MultipleDropdown.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Handle Alert",
+          "title": "Select dropdown by label",
           "ok": true,
           "tags": [],
           "tests": [
@@ -128,28 +96,28 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6735,
+                  "duration": 9386,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.500Z",
+                  "startTime": "2026-01-12T07:07:28.291Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\test-finished-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-dropdown-by-label-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\video.webm"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-dropdown-by-label-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-chromium\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-dropdown-by-label-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -157,13 +125,13 @@
               "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-9ed975017f5e2ba45e30",
-          "file": "alert.spec.js",
+          "id": "3669385a9799c6270384-e1ac817fcf03a9d3df64",
+          "file": "MultipleDropdown.spec.js",
           "line": 3,
           "column": 1
         },
         {
-          "title": "Handle confirm box",
+          "title": "Handle dropdowns",
           "ok": true,
           "tags": [],
           "tests": [
@@ -178,28 +146,28 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6842,
+                  "duration": 10447,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.419Z",
+                  "startTime": "2026-01-12T07:07:28.380Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\test-finished-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Handle-dropdowns-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\video.webm"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Handle-dropdowns-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-chromium\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Handle-dropdowns-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -207,13 +175,13 @@
               "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-4c01e823ba8d4d2a0c8a",
-          "file": "alert.spec.js",
-          "line": 19,
+          "id": "3669385a9799c6270384-3cc2904e108e464bee5c",
+          "file": "MultipleDropdown.spec.js",
+          "line": 13,
           "column": 1
         },
         {
-          "title": "Handle prompt box",
+          "title": "Check number of options in dropdown",
           "ok": true,
           "tags": [],
           "tests": [
@@ -228,28 +196,32 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 6677,
+                  "duration": 12700,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Number of options: \u001b[33m10\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.324Z",
+                  "startTime": "2026-01-12T07:07:28.348Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\test-finished-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-number-of-options-in-dropdown-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\video.webm"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-number-of-options-in-dropdown-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-chromium\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-number-of-options-in-dropdown-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -257,222 +229,169 @@
               "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-b34ef3d18faf74c7c394",
-          "file": "alert.spec.js",
+          "id": "3669385a9799c6270384-9b460875b1748f1825dd",
+          "file": "MultipleDropdown.spec.js",
           "line": 36,
           "column": 1
         },
         {
-          "title": "Handle Alert",
-          "ok": false,
+          "title": "Check presence value in dropdown",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 3,
                   "parallelIndex": 3,
-                  "status": "timedOut",
-                  "duration": 30501,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 10923,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      "text": "\n        United States\n      \n"
                     },
                     {
-                      "location": {
-                        "file": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\tests\\alert.spec.js",
-                        "column": 63,
-                        "line": 16
-                      },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\\'Click for JS Alert\\']')\u001b[22m\n\u001b[2m    - locator resolved to <button onclick=\"jsAlert()\">Click for JS Alert</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\n\n\u001b[0m \u001b[90m 14 |\u001b[39m   })\n \u001b[90m 15 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[text()='Click for JS Alert']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m })\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m test(\u001b[32m\"Handle confirm box\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\tests\\alert.spec.js:16:63\u001b[22m"
+                      "text": "\n        Canada\n      \n"
+                    },
+                    {
+                      "text": "\n        United Kingdom\n      \n"
+                    },
+                    {
+                      "text": "\n        Germany\n      \n"
+                    },
+                    {
+                      "text": "\n        France\n      \n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.288Z",
+                  "startTime": "2026-01-12T07:07:28.504Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\test-failed-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-presence-value-in-dropdown-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\error-context.md"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-presence-value-in-dropdown-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-firefox\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Check-presence-value-in-dropdown-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-537b22015922722b4fd3",
-          "file": "alert.spec.js",
-          "line": 3,
+          "id": "3669385a9799c6270384-442b2f5c1d02bfc6f885",
+          "file": "MultipleDropdown.spec.js",
+          "line": 53,
           "column": 1
         },
         {
-          "title": "Handle confirm box",
-          "ok": false,
+          "title": "select option from dropdown using loop",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 4,
                   "parallelIndex": 4,
-                  "status": "timedOut",
-                  "duration": 30068,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
-                    },
-                    {
-                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 12285,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.437Z",
+                  "startTime": "2026-01-12T07:07:28.381Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-select-option-from-dropdown-using-loop-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-select-option-from-dropdown-using-loop-chromium\\video.webm"
+                    },
+                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-firefox\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-select-option-from-dropdown-using-loop-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-6397a9a08981d59c7e6e",
-          "file": "alert.spec.js",
-          "line": 19,
+          "id": "3669385a9799c6270384-599f83d43443b8708ff2",
+          "file": "MultipleDropdown.spec.js",
+          "line": 84,
           "column": 1
         },
         {
-          "title": "Handle prompt box",
-          "ok": false,
+          "title": "Select multiple options from multi-select dropdown",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 5,
                   "parallelIndex": 5,
-                  "status": "timedOut",
-                  "duration": 30249,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 9918,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
-                    },
-                    {
-                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
+                      "text": "Number of options: \u001b[33m7\u001b[39m\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:38.514Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-firefox\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "58a97d902aa7686a9021-5875f45ed57968c3483c",
-          "file": "alert.spec.js",
-          "line": 36,
-          "column": 1
-        },
-        {
-          "title": "Handle Alert",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 6221,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-11T15:07:49.652Z",
+                  "startTime": "2026-01-12T07:07:28.389Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\test-finished-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-mu-a0937--from-multi-select-dropdown-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\video.webm"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-mu-a0937--from-multi-select-dropdown-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-Alert-webkit\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Select-mu-a0937--from-multi-select-dropdown-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -480,13 +399,13 @@
               "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-0191293088aacca06ca6",
-          "file": "alert.spec.js",
-          "line": 3,
+          "id": "3669385a9799c6270384-176f8d31e5164fb236b6",
+          "file": "MultipleDropdown.spec.js",
+          "line": 103,
           "column": 1
         },
         {
-          "title": "Handle confirm box",
+          "title": "Auto suggest dropdown - Google",
           "ok": true,
           "tags": [],
           "tests": [
@@ -494,85 +413,35 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 6442,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-11T15:07:49.643Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-confirm-box-webkit\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "58a97d902aa7686a9021-02ae7e18c4393946aa40",
-          "file": "alert.spec.js",
-          "line": 19,
-          "column": 1
-        },
-        {
-          "title": "Handle prompt box",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 8,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5903,
+                  "duration": 8235,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-11T15:07:49.641Z",
+                  "startTime": "2026-01-12T07:07:38.048Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\test-finished-1.png"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Auto-suggest-dropdown---Google-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\video.webm"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Auto-suggest-dropdown---Google-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\alert-Handle-prompt-box-webkit\\trace.zip"
+                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\MultipleDropdown-Auto-suggest-dropdown---Google-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -580,9 +449,9 @@
               "status": "expected"
             }
           ],
-          "id": "58a97d902aa7686a9021-fc145d9a78f4a91ac20e",
-          "file": "alert.spec.js",
-          "line": 36,
+          "id": "3669385a9799c6270384-24dd8c5c10102b023e2c",
+          "file": "MultipleDropdown.spec.js",
+          "line": 139,
           "column": 1
         }
       ]
@@ -590,11 +459,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-11T15:07:36.551Z",
-    "duration": 39401.841,
-    "expected": 6,
+    "startTime": "2026-01-12T07:07:26.641Z",
+    "duration": 19943.867,
+    "expected": 7,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 0,
     "flaky": 0
   }
 }
