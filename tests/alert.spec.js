@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test("Handle Alert", async ({ page }) => {
+test("Handle Alert with ok", async ({ page }) => {
 
   await page.goto("https://the-internet.herokuapp.com/javascript_alerts")
 
@@ -16,7 +16,7 @@ test("Handle Alert", async ({ page }) => {
   await page.locator("//button[text()='Click for JS Alert']").click()
 })
 
-test("Handle confirm box", async ({ page }) => {
+test("Handle confirm box with ok & cancel", async ({ page }) => {
 
   await page.goto("https://the-internet.herokuapp.com/javascript_alerts")
 

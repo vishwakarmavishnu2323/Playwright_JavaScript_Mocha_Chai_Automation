@@ -160,6 +160,46 @@ test('Auto suggest dropdown - Google', async ({ page }) => {
 
 
 
+test('Hidden options dropdown', async ({ page }) => {
+
+  await page.goto(
+    'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+  );
+
+  // Login
+  await page.locator('[name="username"]').fill('Admin');
+  await page.locator('[name="password"]').fill('admin123');
+  await page.locator('[type="submit"]').click();
+
+  // Click on PIM menu
+  await page.locator("//span[normalize-space()='PIM']").click();
+
+  // Click on Job Title dropdown (hidden dropdown)
+  await page.locator(
+    "//*[@id='app']/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[6]/div/div[2]/div/div"
+  ).click();
+
+  // wait for options to appear
+  await page.waitForTimeout(3000);
+
+  // capture all dropdown options
+  const options = await page.$$("//div[@role='listbox']//span");
+
+  for (let option of options) {
+    const jobTitle = await option.textContent();
+    // console.log(jobTitle);
+
+    if (jobTitle.includes('QA Engineer')) {
+      await option.click();
+      break;
+    }
+  }
+
+  await page.waitForTimeout(5000);
+});
+
+
+
 /*
 test('Bootstrap dropdown', async ({ page }) => {
 
