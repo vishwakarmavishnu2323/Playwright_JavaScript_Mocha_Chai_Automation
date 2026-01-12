@@ -58,7 +58,7 @@ reporter: [['list'],
      video: "on",  //video for failed & passed tests
      //viewport: null  //maximize browser window
      viewport:{width:1920,height:1080},
-     headless: true,
+     headless: false,
   },
 
   //timeout=3000,
@@ -73,15 +73,15 @@ reporter: [['list'],
        },  
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
 
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
 
     /* Test against mobile viewports. */
     // {
