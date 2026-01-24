@@ -1,189 +1,178 @@
-{
-  "config": {
-    "configFile": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\playwright.config.js",
-    "rootDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
-    "forbidOnly": false,
-    "fullyParallel": true,
-    "globalSetup": null,
-    "globalTeardown": null,
-    "globalTimeout": 0,
-    "grep": {},
-    "grepInvert": null,
-    "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 2
-    },
-    "preserveOutput": "always",
-    "reporter": [
-      [
-        "list",
-        null
-      ],
-      [
-        "html",
-        null
-      ],
-      [
-        "junit",
-        {
-          "outputFile": "results.xml"
-        }
-      ],
-      [
-        "json",
-        {
-          "outputFile": "results.xml"
-        }
-      ],
-      [
-        "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
-        {
-          "outputFolder": "my-allure-results"
-        }
-      ]
-    ],
-    "reportSlowTests": {
-      "max": 5,
-      "threshold": 300000
-    },
-    "quiet": false,
-    "projects": [
-      {
-        "outputDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "C:/Automation/Playwright_JavaScript_Mocha_Chai_Automation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      }
-    ],
-    "shard": null,
-    "tags": [],
-    "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
-    "version": "1.57.0",
-    "workers": 6,
-    "webServer": null
-  },
-  "suites": [
-    {
-      "title": "HandledownloadedPDFdata.spec.js",
-      "file": "HandledownloadedPDFdata.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Read PDF text from URL",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1689,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\n\nYesLogic Pty. Ltd.\n7 / 39 Bouverie St\nCarlton VIC 3053\nAustralia\nwww.yeslogic.com\nABN 32 101 193 560\nInInvvoicoicee\nCustomer Name\nStreet\nPostcode City\nCountry\nInvoice date:Nov 26, 2016\nInvoice number:161126\nPayment due:30 days after invoice date\nDescriptionFromUntilAmount\nPrince Upgrades & SupportNov 26, 2016Nov 26, 2017USD $950.00\nTotalUSD $950.00\nPlease transfer amount to:\nBank account name:Yes Logic Pty Ltd\nName of Bank:Commonwealth Bank of Australia (CBA)\nBank State Branch (BSB):063010\nBank State Branch (BSB):063010\nBank State Branch (BSB):063019\nBank account number:13201652\nBank SWIFT code:CTBAAU2S\nBank address:231 Swanston St, Melbourne, VIC 3000, Australia\nThe BSB number identifies a branch of a financial institution in Australia. When transferring money to Australia, the\nBSB number is used together with the bank account number and the SWIFT code. Australian banks do not use IBAN\nnumbers.\nwww.yeslogic.com\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T12:10:59.814Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\HandledownloadedPDFdata-Read-PDF-text-from-URL-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "087c7745c65eb33f5ce9-d42b8b8ffe096c81b810",
-          "file": "HandledownloadedPDFdata.spec.js",
-          "line": 28,
-          "column": 5
-        },
-        {
-          "title": "download pdf and read invoice number",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 4798,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-12T12:10:59.803Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\HandledownloadedPDFdata-download-pdf-and-read-invoice-number-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\HandledownloadedPDFdata-download-pdf-and-read-invoice-number-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Automation\\Playwright_JavaScript_Mocha_Chai_Automation\\test-results\\HandledownloadedPDFdata-download-pdf-and-read-invoice-number-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "087c7745c65eb33f5ce9-597a5e44eeda9b3075a3",
-          "file": "HandledownloadedPDFdata.spec.js",
-          "line": 54,
-          "column": 5
-        }
-      ]
-    }
-  ],
-  "errors": [],
-  "stats": {
-    "startTime": "2026-01-12T12:10:58.971Z",
-    "duration": 5951.491,
-    "expected": 2,
-    "skipped": 0,
-    "unexpected": 0,
-    "flaky": 0
-  }
-}
+<testsuites id="" name="" tests="9" failures="3" skipped="0" errors="0" time="36.575144">
+<testsuite name="alert.spec.js" timestamp="2026-01-24T02:13:52.858Z" hostname="chromium" tests="3" failures="0" skipped="0" time="19.666" errors="0">
+<testcase name="Handle Alert with ok" classname="alert.spec.js" time="6.217">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle confirm box with ok &amp; cancel" classname="alert.spec.js" time="6.668">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle prompt box" classname="alert.spec.js" time="6.781">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="alert.spec.js" timestamp="2026-01-24T02:13:52.858Z" hostname="firefox" tests="3" failures="3" skipped="0" time="90.53" errors="0">
+<testcase name="Handle Alert with ok" classname="alert.spec.js" time="30.391">
+<failure message="alert.spec.js:3:1 Handle Alert with ok" type="FAILURE">
+<![CDATA[  [firefox] › alert.spec.js:3:1 › Handle Alert with ok ─────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('//button[text()=\'Click for JS Alert\']')
+        - locator resolved to <button onclick="jsAlert()">Click for JS Alert</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+
+
+      14 |   })
+      15 |
+    > 16 |   await page.locator("//button[text()='Click for JS Alert']").click()
+         |                                                               ^
+      17 | })
+      18 |
+      19 | test("Handle confirm box with ok & cancel", async ({ page }) => {
+        at C:\Automation\Playwright_JavaScript_Mocha_Chai_Automation\tests\alert.spec.js:16:63
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\alert-Handle-Alert-with-ok-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\alert-Handle-Alert-with-ok-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\alert-Handle-Alert-with-ok-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\alert-Handle-Alert-with-ok-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\alert-Handle-Alert-with-ok-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-firefox\error-context.md]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle confirm box with ok &amp; cancel" classname="alert.spec.js" time="30.071">
+<failure message="alert.spec.js:19:1 Handle confirm box with ok &amp; cancel" type="FAILURE">
+<![CDATA[  [firefox] › alert.spec.js:19:1 › Handle confirm box with ok & cancel ─────────────────────────────
+
+    Test timeout of 30000ms exceeded while setting up "page".
+
+    Error: browserContext.newPage: Test timeout of 30000ms exceeded.
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\alert-Handle-confirm-box-with-ok-cancel-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\alert-Handle-confirm-box-with-ok-cancel-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle prompt box" classname="alert.spec.js" time="30.068">
+<failure message="alert.spec.js:36:1 Handle prompt box" type="FAILURE">
+<![CDATA[  [firefox] › alert.spec.js:36:1 › Handle prompt box ───────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while setting up "page".
+
+    Error: browserContext.newPage: Test timeout of 30000ms exceeded.
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\alert-Handle-prompt-box-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\alert-Handle-prompt-box-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="alert.spec.js" timestamp="2026-01-24T02:13:52.858Z" hostname="webkit" tests="3" failures="0" skipped="0" time="18.384" errors="0">
+<testcase name="Handle Alert with ok" classname="alert.spec.js" time="6.061">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-webkit\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-Alert-with-ok-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle confirm box with ok &amp; cancel" classname="alert.spec.js" time="6.109">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-webkit\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-confirm-box-with-ok-cancel-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Handle prompt box" classname="alert.spec.js" time="6.214">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-webkit\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\alert-Handle-prompt-box-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

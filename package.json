@@ -2,15 +2,32 @@
   "name": "playwright_javascript_mocha_chai_automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "report": "npx playwright show-report",
+    "report:allure": "rd /s /q allure-report && allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test:alert": "npx playwright test alert.spec.js",
+    "test:alert:chrome": "playwright test alert.spec.js --project=chromium"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "allure",
+    "mocha",
+    "chai",
+    "e2e"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "End-to-end automation framework using Playwright, Mocha/Chai, and Allure",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.3",
     "allure-playwright": "^3.4.3",
+    "dotenv": "^17.2.3",
     "pdf-parse": "^1.1.4",
     "xlsx": "^0.18.5"
   }

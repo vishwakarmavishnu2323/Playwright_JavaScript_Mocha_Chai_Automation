@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 
+  require('dotenv').config();
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -30,7 +32,7 @@ export default defineConfig({
   //retries:2,  //Rerun failed test cases
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  //workers: 4 ,  // Execute test cases in parallel
+  //workers: 4 ,  // Execute 4 test cases in parallel
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   /*reporter: 'html', */
@@ -38,8 +40,8 @@ export default defineConfig({
 reporter: [['list'],
               ['html'],
               ['junit',{outputFile:'results.xml'}],
-              ['json',{outputFile:'results.xml'}],
-              ['allure-playwright',{outputFolder:'my-allure-results'}],
+              ['json',{outputFile:'report.json'}],
+              ['allure-playwright',{outputFolder:'allure-results'}],
 
 ],
 //reporter:[['allure-playwright',{outputFolder:'allure-results'}]],
@@ -58,8 +60,16 @@ reporter: [['list'],
      video: "on",  //video for failed & passed tests
      //viewport: null  //maximize browser window
      viewport:{width:1920,height:1080},
-     headless: false,
+     headless: true,
+     baseURL: process.env.BASE_URL,
+     
   },
+
+
+
+
+
+
 
   //timeout=3000,
 
@@ -72,6 +82,7 @@ reporter: [['list'],
       // headless: true,
        },  
     },
+     
 
     {
       name: 'firefox',

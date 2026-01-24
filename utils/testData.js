@@ -1,0 +1,10 @@
+module.exports = {
+  validUser: {
+    username: 'admin',
+    password: 'admin123'
+  },
+  invalidUser: {
+    username: 'wrong',
+    password: 'wrong123'
+  }
+};
