@@ -1,5 +1,5 @@
 const base = require('@playwright/test');
-const { LoginPage } = require('../pages/LoginPage1');
+const { LoginPage } = require('../LoginPage');   // fix path if needed
 
 exports.test = base.test.extend({
   loginPage: async ({ page }, use) => {

@@ -51,3 +51,29 @@ test('Verify Application Title Using Loop', async ({ page }) => {
   // Optional assertion
   await expect(page).toHaveTitle(/twitter/i);
 });
+
+test('Verify Application Title Using for...of Loop', async ({ page }) => {
+  // Open Google
+  await page.goto('https://www.google.com');
+
+  // Type search keyword
+  await page.locator('textarea[name="q"]').type('Vishnu vishwakarma');
+
+  // Wait for auto-suggestions
+  await page.waitForSelector("//li[@data-attrid='AutocompletePrediction']");
+
+  // Capture all suggestions
+  const elements = await page.$$("//li[@data-attrid='AutocompletePrediction']");
+
+  for (const element of elements) {
+    const text = await element.textContent();
+
+    if (text && text.includes('twitter')) {
+      await element.click();
+      break; // exit loop once matched
+    }
+  }
+
+  // Assertion
+  await expect(page).toHaveTitle(/twitter/i);
+});

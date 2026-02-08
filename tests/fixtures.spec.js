@@ -45,6 +45,9 @@ test('Page test',async () => {
   const page = await context.newPage();
 
   await page.goto('https://example.com');
+
+
+
   console.log('Page actions completed');
   await browser.close();
 });

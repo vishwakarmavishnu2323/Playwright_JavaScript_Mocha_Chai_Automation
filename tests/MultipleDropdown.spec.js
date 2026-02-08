@@ -241,7 +241,21 @@ test('Bootstrap dropdown', async ({ page }) => {
 });
 */
 
+test("Handle Multi Select Dropdown", async ({ page }) => {
 
+  await page.goto("https://demoqa.com/select-menu");
+
+  // Single select (commented – valid)
+  // await page.locator("#cars").selectOption("opel");
+
+  // Multi select
+  await page.locator("#cars").selectOption([
+    { value: "volvo" },
+    { value: "opel" },
+    { value: "audi" }
+  ]);
+
+});
 
 
 

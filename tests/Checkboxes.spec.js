@@ -49,3 +49,72 @@ test('Handle checkboxes', async ({ page }) => {
 
   await page.waitForTimeout(5000); // pausing code
 });
+
+
+test('checkboxes handling', async ({ page }) => {
+
+    await page.goto('https://testautomationpractice.blogspot.com/')
+    
+
+let  checkboxes=await page.$$('//*[@class="form-check form-check-inline"]//following-sibling::input[@type="checkbox"]');
+  
+   
+   for (const checkbox of checkboxes) {
+
+    if (await checkbox.isChecked()) {
+      await checkbox.uncheck();   // already checked → uncheck
+    } else {
+      await checkbox.check();     // not checked → check
+    }
+   }
+
+})
+test('radio button handling', async ({ page }) => {
+
+  await page.goto('https://testautomationpractice.blogspot.com/');
+
+  const radios = await page.$$(
+    '//*[@class="form-check form-check-inline"]//input[@type="radio"]'
+  );
+
+  for (let i = 0; i < radios.length; i++) {
+
+    if (await radios[i].isChecked()) {
+      // If already checked, select next radio (if exists)
+      if (i + 1 < radios.length) {
+        await radios[i + 1].check();
+      }
+    } else {
+      // If not checked, check it
+      await radios[i].check();
+    }
+    
+  }
+
+});
+test.only('check specific checkboxes', async ({ page }) => {
+
+  await page.goto('https://testautomationpractice.blogspot.com/');
+
+  const checkboxes = await page.$$(
+    '//*[@class="form-check form-check-inline"]//following-sibling::input[@type="checkbox"]'
+  );
+
+  // method 1st
+  await checkboxes[0].check();                      // 1st
+  await checkboxes[3].check();                      // 4th
+  await checkboxes[checkboxes.length - 1].check(); // last
+
+
+  //method 2nd
+
+//   const checkboxes = await page.locator(
+//     '//*[@class="form-check form-check-inline"]//following-sibling::input[@type="checkbox"]'
+//   );
+//    await checkboxes.first().check();   // 1st
+//   await checkboxes.nth(3).check();    // 4th (index starts at 0)
+//   await checkboxes.last().check();    // last
+
+ 
+  
+});

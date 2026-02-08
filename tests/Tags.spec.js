@@ -16,6 +16,25 @@ test('test4 @sanity @reg', async ({ page }) => {
   console.log('this is my test4...');
 });
 
+// Correct syntax
+test('test5', { tags: ['@sanity', '@reg'] }, async ({ page }) => {
+  console.log('this is my test5...');
+});
+
+test('test6', { tags: '@sanity' }, async ({ page }) => {
+  console.log('this is my test6...');
+});
+
+test('Login test 7', { tags: ['@sanity'] }, async ({ page }) => {
+ console.log('this is my test7...');
+});
+
+test('Checkout test 8', { tags: ['@reg'] }, async ({ page }) => {
+ console.log('this is my test8...');
+});
+
+
+
 
 
 /*

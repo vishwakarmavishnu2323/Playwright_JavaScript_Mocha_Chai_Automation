@@ -1,7 +1,28 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+import path from 'path';
 
-  require('dotenv').config();
+
+dotenv.config();
+const tag = process.env.TAG;
+
+// Load environment file
+const env = process.env.TEST_ENV || 'dev';
+
+
+// Load correct .env file dynamically
+dotenv.config({
+  path: path.resolve(`env-files/.env.${env}`)
+});
+
+/*  or
+dotenv.config({
+  path: `env-files/.env.${process.env.TEST_ENV || 'dev'}`
+});
+*/
+
+
 
 /**
  * Read environment variables from file.
@@ -23,6 +44,19 @@ export default defineConfig({
   expect: {
     timeout: 5000,
   },
+//Skip regression tests
+   grepInvert: /@reg/,
+
+ // Run only sanity tests
+ // grep: /@sanity/,
+
+ // run tests dynamic using tag
+ grep: tag ? new RegExp(tag) : undefined,
+
+ //method1
+//run auth json globally//You can run login automatically before tests.
+ //globalSetup: require.resolve('./global-setup'),
+
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -38,7 +72,7 @@ export default defineConfig({
   /*reporter: 'html', */
 
 reporter: [['list'],
-              ['html'],
+              ['html',{open:'always'}],
               ['junit',{outputFile:'results.xml'}],
               ['json',{outputFile:'report.json'}],
               ['allure-playwright',{outputFolder:'allure-results'}],
@@ -62,17 +96,85 @@ reporter: [['list'],
      viewport:{width:1920,height:1080},
      headless: true,
      baseURL: process.env.BASE_URL,
+     //storageState: '.auth/user.json', // applied to all tests//method1
      
   },
 
+ 
 
 
+//method 2
+/*  //run auth json globally//You can run login automatically before tests.
+  projects: [
+    // 1. Setup project (runs login and saves storage state)
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.js/,
+    },
+
+    // 2. Chromium //// Project with auth login
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: '.auth/user.json',
+      },
+      dependencies: ['setup'],
+    },
+
+     // Project without auth login
+    {
+      name: 'chromium-noauth',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: undefined,
+      },
+
+    // 3. Firefox
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: '.auth/user.json',
+      },
+      dependencies: ['setup'],
+    },
+
+    // 4. WebKit (Safari engine)
+    {
+      name: 'webkit',
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: '.auth/user.json',
+      },
+      dependencies: ['setup'],
+    },
+  ],
+*/
+
+/*  method 3 for disable auth
+export default defineConfig({
+  use: {
+    storageState: '.auth/user.json',
+  },
+
+  projects: [
+    {
+      name: 'auth-tests',
+    },
+    {
+      name: 'no-auth-tests',
+      grep: /@noauth/,
+      use: {
+        storageState: undefined,
+      },
+    },
+  ],
+});
+*/
 
 
-
-
-  //timeout=3000,
-
+ 
   /* Configure projects for major browsers */
   projects: [
     {
@@ -84,15 +186,15 @@ reporter: [['list'],
     },
      
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {

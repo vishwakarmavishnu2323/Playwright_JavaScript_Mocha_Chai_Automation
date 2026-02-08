@@ -92,3 +92,29 @@ test('Keyboard actions', async ({ page }) => {
 
   await page.waitForTimeout(5000);
 });
+
+
+
+test("dispatchEvent operations when element is hidden", async (page) => {
+
+  await page.goto("https://staging.engineer.ai/home");
+
+  await page.getByRole('button', { name: 'Choose a base' }).click();
+
+  await page.getByText("Actually I’ll browse the").click();
+
+  await page.waitForTimeout(3000);
+
+  // await page.getByRole('button', { name: 'Custom Template' }).click({ modifiers: ['Shift'] })//shift+click
+   // await page.getByRole('button', { name: 'Custom Template' }).click({force:true}) //forcefully click
+
+  await page.getByRole('button', { name: 'Custom Template' }).dispatchEvent('click');
+
+  // await page.goto("https://the-internet.herokuapp.com/add_remove_elements/");
+  // await page.getByRole('button', { name: 'Add Element' }).dblclick();
+
+  // await page.goto("https://swisnl.github.io/jQuery-contextMenu/demo.html");
+  // // await page.getByText('right click me', { exact: true }).click({ button: 'right' });
+  // // await page.getByRole('heading', { name: 'Example code: Simple Context' }).click();
+
+});

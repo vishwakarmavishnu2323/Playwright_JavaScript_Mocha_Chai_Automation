@@ -63,5 +63,53 @@ test('Multiple File Upload', async ({ page }) => {
 });
 
 
+const path = require('path');
+
+test('file download using click', async ({ page }) => {
+
+  await page.goto('https://the-internet.herokuapp.com/download');
+
+  // First download
+  const [download1] = await Promise.all([
+    page.waitForEvent('download'),
+    page.click('a[href="download/some-file.txt"]')
+  ]);
+
+  //await download1.saveAs('some-file.txt');
+
+  await download1.saveAs(
+    path.join(__dirname, '..', 'uploadFiles', 'some-file.txt')
+  );
+
+  // Second download
+  const [download2] = await Promise.all([
+    page.waitForEvent('download'),
+    page.click('a[href="download/Cypress Intro.pdf"]')
+  ]);
+
+  //await download2.saveAs('Cypress Intro.pdf');
+  await download2.saveAs(
+    path.join(__dirname, '..', 'uploadFiles', 'Cypress Intro.pdf')
+  );
+});
+
+//Use filechooser only when file input is hidden or triggered by a button.
+test("Practice File Upload 2", async ({ page }) => {
+
+  await page.goto("https://the-internet.herokuapp.com/upload");
+
+  const fileChooserPromise = page.waitForEvent('filechooser');
+
+  await page.locator('#file-upload').click();
+
+  const fileChooser = await fileChooserPromise;
+
+  await fileChooser.setFiles('to-upload/file3.docx');
+
+  await page.click('#file-submit');
+
+});
+
+
 
 
