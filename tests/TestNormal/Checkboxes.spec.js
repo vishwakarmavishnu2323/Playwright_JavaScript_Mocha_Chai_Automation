@@ -51,7 +51,7 @@ test('Handle checkboxes', async ({ page }) => {
 });
 
 
-test('checkboxes handling', async ({ page }) => {
+test('multiple checkboxes handling', async ({ page }) => {
 
     await page.goto('https://testautomationpractice.blogspot.com/')
     
@@ -92,7 +92,7 @@ test('radio button handling', async ({ page }) => {
   }
 
 });
-test.only('check specific checkboxes', async ({ page }) => {
+test('check specific checkboxes', async ({ page }) => {
 
   await page.goto('https://testautomationpractice.blogspot.com/');
 

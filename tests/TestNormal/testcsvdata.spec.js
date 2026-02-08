@@ -1,10 +1,13 @@
 const { test, expect } = require('@playwright/test');
-const { readCSV } = require('../utils/csvReader.js');
+const { readCSV } = require('../../utils/csvReader.js');
+
+
+
 
 let testData = [];
 
 test.beforeAll(async () => {
-  testData = await readCSV('testdata/loginData.csv');
+  testData = await readCSV('../../testdata/testjsondata/testdata.csv');
 });
 
 testData.forEach((data) => {

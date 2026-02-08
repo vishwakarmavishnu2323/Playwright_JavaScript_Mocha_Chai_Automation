@@ -20,29 +20,8 @@ test('Select values from dropdown', async ({ page }) => {
   console.log('All dropdown values:', values);
 });
 
-test('Verify value exists in dropdown', async ({ page }) => {
+test('Select multiple options from dropdown', async ({ page }) => {
   await page.goto('https://freelance-learn-automation.vercel.app/signup');
-
-  const state = await page.$('#state');
-  const allElements = await page.$$('option');
-
-  let ddStatus = false;
-
-  for (const element of allElements) {
-    const value = await element.textContent();
-    console.log('Dropdown value:', value);
-
-    if (value.includes('Assam')) {
-      ddStatus = true;
-      console.log('Dropdown ddStatusvalue:', ddStatus);
-      break;
-    }
-  }
-
-  await expect(ddStatus).toBeTruthy();
-
-
-
   // Multi-select dropdown
   await page.locator('#hobbies').selectOption([
     { label: 'Playing' },
@@ -51,3 +30,27 @@ test('Verify value exists in dropdown', async ({ page }) => {
 
   await page.waitForTimeout(3000);
 });
+
+test('Verify value exists in dropdown', async ({ page }) => {
+  await page.goto('https://freelance-learn-automation.vercel.app/signup');
+
+  const state = await page.locator('#state').click({force:true});
+
+  const allElements = await page.$$('option');
+
+  let ddStatus = false;
+
+  for (const element of allElements) {
+    const value = await element.textContent();
+    console.log('Dropdown value:', value);
+
+    if (value.includes('Sikkim')) {
+      ddStatus = true;
+      console.log('Dropdown ddStatusvalue:', ddStatus);
+      break;
+    }
+  }
+
+  await expect(ddStatus).toBeTruthy();
+
+})

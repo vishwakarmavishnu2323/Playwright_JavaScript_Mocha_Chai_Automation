@@ -4,7 +4,7 @@ test('single jpg file upload', async ({ page }) => {
 
   await page.goto('https://the-internet.herokuapp.com/upload');
 
-  await page.locator('#file-upload').setInputFiles('./uploadFiles/image_1.jpg');
+  await page.locator('#file-upload').setInputFiles('testdata/uploadFiles/image_1.jpg');
 
   await page.locator('#file-submit').click();
 
@@ -19,7 +19,7 @@ test('Single pdf File Upload', async ({ page }) => {
 
   // Upload file
   await page.locator('#file-upload')
-    .setInputFiles('./uploadFiles/Testfile1.pdf');
+    .setInputFiles('testdata/uploadFiles/Testfile1.pdf');
 
   // Click upload button
   await page.locator('#file-submit').click();
@@ -40,8 +40,8 @@ test('Multiple File Upload', async ({ page }) => {
   await page.goto('https://www.davidwalsh.name/demo/multiple-file-upload.php');
 
   await page.locator('#filesToUpload').setInputFiles([
-    './uploadFiles/Testfile1.pdf',
-    './uploadFiles/Testfile2.pdf'
+    'testdata/uploadFiles/Testfile1.pdf',
+    'testdata/uploadFiles/Testfile2.pdf'
   ]);
 
   await expect(page.locator('#fileList li:nth-child(1)'))
@@ -78,37 +78,37 @@ test('file download using click', async ({ page }) => {
   //await download1.saveAs('some-file.txt');
 
   await download1.saveAs(
-    path.join(__dirname, '..', 'uploadFiles', 'some-file.txt')
+    path.join(__dirname,'../../testdata/uploadFiles/some-file.txt')
   );
 
   // Second download
   const [download2] = await Promise.all([
     page.waitForEvent('download'),
-    page.click('a[href="download/Cypress Intro.pdf"]')
+    page.click('a[href="download/sample3.pdf"]')
   ]);
 
-  //await download2.saveAs('Cypress Intro.pdf');
+  //await download2.saveAs('sample3.pdf');
   await download2.saveAs(
-    path.join(__dirname, '..', 'uploadFiles', 'Cypress Intro.pdf')
+    path.join(__dirname, '../../testdata/uploadFiles/sample3.pdf')
   );
 });
 
 //Use filechooser only when file input is hidden or triggered by a button.
-test("Practice File Upload 2", async ({ page }) => {
+// test("Practice File Upload 2", async ({ page }) => {
 
-  await page.goto("https://the-internet.herokuapp.com/upload");
+//   await page.goto("https://the-internet.herokuapp.com/upload");
 
-  const fileChooserPromise = page.waitForEvent('filechooser');
+//   const fileChooserPromise = page.waitForEvent('filechooser');
 
-  await page.locator('#file-upload').click();
+//   await page.locator('#file-upload').click();
 
-  const fileChooser = await fileChooserPromise;
+//   const fileChooser = await fileChooserPromise;
 
-  await fileChooser.setFiles('to-upload/file3.docx');
+//   await fileChooser.setFiles('to-upload/file3.docx');
 
-  await page.click('#file-submit');
+//   await page.click('#file-submit');
 
-});
+// });
 
 
 

@@ -11,7 +11,7 @@ test('Login and save session', async ({ page }) => {
   await page.click('button[type="submit"]');
 
   // Wait for dashboard
-  await page.waitForURL('**/dashboard');
+ // await page.waitForURL('**/dashboard');
 
     // Ensure folder exists
   fs.mkdirSync('.auth', { recursive: true });

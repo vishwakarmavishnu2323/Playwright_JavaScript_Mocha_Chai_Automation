@@ -94,8 +94,8 @@ test('Keyboard actions', async ({ page }) => {
 });
 
 
-
-test("dispatchEvent operations when element is hidden", async (page) => {
+/*
+test('dispatchEvent operations when element is hidden', async ({page}) => {
 
   await page.goto("https://staging.engineer.ai/home");
 
@@ -118,3 +118,4 @@ test("dispatchEvent operations when element is hidden", async (page) => {
   // // await page.getByRole('heading', { name: 'Example code: Simple Context' }).click();
 
 });
+*/

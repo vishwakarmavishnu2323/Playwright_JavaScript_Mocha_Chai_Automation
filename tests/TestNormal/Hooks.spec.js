@@ -54,6 +54,7 @@ test.afterEach(async () => {
 
 test('Home Page Test', async () => {
   const products = await page.$$('.hrefch');
+  console.log("length="+products.length);
   expect(products.length).toBe(9);
 });
 

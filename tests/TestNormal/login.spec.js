@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../pages/LoginPage1');
-const { DashboardPage } = require('../pages/DashboardPage');
-const testData = require('../utils/testData');
-const { getRandomEmail } = require('../utils/randomData');
+const { LoginPage } = require('../../pages/LoginPage');
+const { DashboardPage } = require('../../pages/DashboardPage');
+const testData = require('../../testdata/testjsondata/users.json');
+const { getRandomEmail } = require('../../utils/helper.js');
 //const { waitForPageLoad } = require('../utils/helper');
 
 // test('Dashboard load test', async ({ page }) => {
@@ -33,11 +33,11 @@ const { getRandomEmail } = require('../utils/randomData');
 test('Login using utils test data', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
-  await loginPage.navigate();
+  await loginPage.gotoLoginPage();
   await loginPage.login(
-    testData.users.valid.username,
-    testData.users.valid.password
+   testData.validUser.username,
+    testData.validUser.password
   );
 
-  await expect(page).toHaveURL(/dashboard/);
+  await expect(page).toHaveURL('https://www.demoblaze.com/index.html');
 });

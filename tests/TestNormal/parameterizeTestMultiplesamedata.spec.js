@@ -1,7 +1,7 @@
 
 
 import { test, expect } from '@playwright/test';
-import testdata from '../utils/testData.js';
+import testdata from '../../testData/testjsondata/logintestdata.json';
 
 testdata.forEach((data) => {
     test('Login To Application'+ data.username, async ({ page }) => {
@@ -13,8 +13,8 @@ testdata.forEach((data) => {
 
 });
 });
-
-// testData.forEach((data) => {
+//=====================or===============================
+// testdata.forEach((data) => {
 //   test(`Login test for ${data.username}`, async ({ page }) => {
 //     await page.goto('https://opensource-demo.orangehrmlive.com/');
 
@@ -23,6 +23,7 @@ testdata.forEach((data) => {
 //     await page.click('button[type="submit"]');
 //   });
 // });
+//============================or==================================
 
 // for(const data of testdata) {
 //     test('Login To Application'+ data.username, async ({ page }) => {

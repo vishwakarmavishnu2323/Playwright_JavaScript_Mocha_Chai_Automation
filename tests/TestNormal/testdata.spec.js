@@ -3,7 +3,7 @@
 
 import { test, expect } from '@playwright/test';
 //import testdata from '../testdata.json';
-const testdata= JSON.parse(JSON.stringify(require('../testdata.json')))
+const testdata= JSON.parse(JSON.stringify(require('../../testdata/testjsondata/testdata.json')))
 
 test('Login To Application', async ({ page }) => {
 

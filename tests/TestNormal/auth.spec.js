@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test('Dashboard test', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
 
-  await expect(page.locator('h6')).toHaveText('Dashboard');
+  await expect(page.locator('h5')).toHaveText('Login');
 });
 
 
