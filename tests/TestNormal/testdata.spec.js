@@ -1,8 +1,9 @@
 //const { test, expect } = require('@playwright/test');
 //const testdata = require('../testdata.json');
+//import testdata from '../testdata.json';
 
 import { test, expect } from '@playwright/test';
-//import testdata from '../testdata.json';
+
 const testdata= JSON.parse(JSON.stringify(require('../../testdata/testjsondata/testdata.json')))
 
 test('Login To Application', async ({ page }) => {
@@ -45,7 +46,7 @@ test.describe('Data Driven Login Test', () => {
 
 
  //=========== OR ===========
-/*
+
 test.describe('Data Driven Login Test', () => {
 
   for (const data of testdata.users) {
@@ -64,5 +65,5 @@ test.describe('Data Driven Login Test', () => {
 
   }
 });
-    */
+    
 

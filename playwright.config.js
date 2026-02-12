@@ -45,10 +45,12 @@ export default defineConfig({
     timeout: 5000,
   },
 //Skip regression tests
-   grepInvert: /@reg/,
+   //grepInvert: /@reg/,
 
  // Run only sanity tests
- // grep: /@sanity/,
+    //grep: /@sanity.*reg/,
+    //grep: /@sanity/,
+    //grep: /@reg/,
 
  // run tests dynamic using tag
  grep: tag ? new RegExp(tag) : undefined,
@@ -69,33 +71,40 @@ export default defineConfig({
   //workers: 4 ,  // Execute 4 test cases in parallel
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  /*reporter: 'html', */
+  reporter: [['html',{open:'always'}]],
 
-reporter: [['list'],
-              ['html',{open:'always'}],
-              ['junit',{outputFile:'results.xml'}],
-              ['json',{outputFile:'report.json'}],
-              ['allure-playwright',{outputFolder:'allure-results'}],
 
-],
+// reporter: [['list'],
+//               ['html',{open:'always'}],
+//               ['junit',{outputFile:'results.xml'}],
+//               ['json',{outputFile:'report.json'}],
+//               ['allure-playwright',{outputFolder:'allure-results'}],
+
+// ],
 //reporter:[['allure-playwright',{outputFolder:'allure-results'}]],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+       //baseURL: 'http://localhost:3000',
+
+     /*baseURL:'https://restful-booker.herokuapp.com',
+     extraHTTPHeaders:{
+      Accept: "application/json",
+      "Content-Type":"application/json"
+    },  */
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    // trace: 'on-first-retry',
-    // screenshot: "only-on-failure",  //Screenshot for failed tests
-      //video: "retain-on-failure"//video for failed tests
-      trace: 'on',
+    //trace: 'on-first-retry',
+    //screenshot: "only-on-failure",  //Screenshot for failed tests
+     // video: "retain-on-failure",//video for failed tests
+     trace: 'on',
      screenshot: "on", //Screenshot for failed & passed tests
      video: "on",  //video for failed & passed tests
-     //viewport: null  //maximize browser window
-     viewport:{width:1920,height:1080},
+     viewport: null , //maximize browser window
+     //viewport:{width:1920,height:1080},
      headless: true,
-     baseURL: process.env.BASE_URL,
+     //baseURL: process.env.BASE_URL,
      //storageState: '.auth/user.json', // applied to all tests//method1
      
   },

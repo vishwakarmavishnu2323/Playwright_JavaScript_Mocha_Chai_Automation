@@ -8,7 +8,7 @@
     "test:qa": "cross-env TEST_ENV=qa npx playwright test --project=chromium",
     "test:staging": "cross-env TEST_ENV=staging npx playwright test --project=chromium",
     "test:sanity": "npx playwright test --grep @sanity",
-    "test:sanity1": "cross-env TAG=@sanity npx playwright test",
+    "test:sanity1": "npx cross-env TAG=@sanity npx playwright test",
     "test:headed": "playwright test --headed",
     "test:chrome": "npx playwright test --project=chromium",
     "test:firefox": "npx playwright test --project=firefox",

@@ -48,5 +48,8 @@ npx playwright test tests/Tags.spec.js --project=chromium --grep @reg
 ▶ Run tests having both sanity and reg
 npx playwright test tests/Tags.spec.js --project=chromium --grep "@sanity.*@reg"
 
+>Skip sanity test cases 
+npx playwright test Tags.spec.js --grep-invert "@sanity"
+
 
 */
